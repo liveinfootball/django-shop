@@ -23,6 +23,7 @@ urlpatterns = [
     url(r'^cart/', include('apps.cart.urls', namespace='cart')),
     url(r'^orders/', include('apps.orders.urls', namespace='orders')),
     url(r'^',include('apps.shop.urls',namespace='shop')),
+    url(r'^coupons/', include('apps.coupons.urls', namespace='coupons')),
 
     #all-auth
     url(r'^accounts/', include('allauth.urls')),
